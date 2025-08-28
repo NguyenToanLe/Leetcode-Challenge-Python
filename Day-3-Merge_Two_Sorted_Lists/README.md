@@ -39,20 +39,6 @@ Output:     [0]
 
 
 ## Solution Explanation
-First, we need to overly estimate, whether the length of `s` is odd or even. In the case of odd length, return `False` 
-immediately, because it will not enough character to construct pairs, which means at least an open or a close bracket 
-will be missing.
+First I roughly check if there is at least an empty linked list. If it is the case, return the other head.
 
-Then we loop through every characters in `s`:
-
-- If it is an open bracket, check if the next character its corresponding close bracket
-  
-    - If it is the case, remove both characters and loop through every characters in new, shorter `s`.
-    - If the next character is not corresponding pair, continue to check next pair.
-
-- If the current character is a close bracket, continue to the next character
-
-If `s` is still a non-empty string and we reach the last character, this is the case where we can return `False`, because
-we cannot find its corresponding pair anymore (if its pair stays before, this character should be already removed).
-
-If `s` is an empty string at the end, that means we have enough bracket pairs and they are in correct position.
+Then I convert linked list to normal list, merged these two normal lists and then convert it back to a linked list.
