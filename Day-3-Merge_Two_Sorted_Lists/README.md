@@ -1,4 +1,4 @@
-# 3. Merge Two Sorted List
+# 3. Merge Two Sorted Lists
 ![Category](https://img.shields.io/badge/Difficulty-Easy-green)
 
 ## Task
@@ -12,40 +12,30 @@ Return *the head of the merged linked list*.
 
 **Example 1**:
 
-<img src="Day-3-Merge_Two_Sorted_Lists/img.png">
+![Example 1](example.jpg)
 
 ```
-Input:      s = "( )"
-Output:     true
+Input:      list1 = [1,2,4], list2 = [1,3,4]
+Output:     [1,1,2,3,4,4]
 ```
 
 **Example 2**:
 ```
-Input:      s = "( ) [ ] { }"
-Output:     true
+Input:      list1 = [], list2 = []
+Output:     []
 ```
 
 **Example 3**:
 ```
-Input:      s = "( ]"
-Output:     false
-```
-
-**Example 4**:
-```
-Input:      s = "( [ ] )"
-Output:     true
-```
-
-**Example 5**:
-```
-Input:      s = "( [ ) ]"
-Output:     false
+Input:      list1 = [], list2 = [0]
+Output:     [0]
+ 
 ```
 
 **Constraints:**
-- <code>1 <= s.length <= 10<sup>4</sup></code>
-- `s` consists of parentheses only `()[]{}`
+- The number of nodes in both lists is in the range `[0, 50]`
+- `-100 <= Node.val <= 100`
+- Both `list1` and `list2` are sorted in **non-decreasing** order.
 
 
 ## Solution Explanation
