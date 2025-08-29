@@ -1,4 +1,4 @@
-# 3. Climbing Stairs
+# 4. Climbing Stairs
 ![Category](https://img.shields.io/badge/Difficulty-Easy-green)
 
 ## Task
