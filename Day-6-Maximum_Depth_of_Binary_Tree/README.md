@@ -1,4 +1,4 @@
-# 5. Same Tree
+# 6. Maximum Depth of Binary Tree
 ![Category](https://img.shields.io/badge/Difficulty-Easy-green)
 
 ## Task
